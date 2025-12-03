@@ -21,10 +21,10 @@ This toolkit automates essential local system administration tasks for Linux env
 
 ## Setup & Installation
 1. Retrieve the latest source code from GitHub to your local machine:
-   $ git clone https://github.com/atharva-shigvan/sysadmin-toolkit/tree/master.git
-   $ cd sysadmin-toolkit
+   > git clone https://github.com/atharva-shigvan/sysadmin-toolkit/tree/master.git
+   > cd sysadmin-toolkit
 2. Make the necessary files executable
-   $ chmod +x toolkit.sh && chmod +x scripts/*
+   > chmod +x toolkit.sh && chmod +x scripts/*
 3. Run the toolkit (with SUDO permissions)
-   $ sudo ./toolkit.sh
+   > sudo ./toolkit.sh
 
