@@ -1,21 +1,30 @@
-### Automated System Administration Toolkit
+# Automated System Administration Toolkit
 
 # Overview
-This toolkit automates essential local system administration tasks for Linux environments. It combines the raw power of **Bash** for system-level operations with the flexibility of **Python** for logic, menu navigation, and complex data handling.
+This toolkit automates essential local system administration tasks for Linux environments. 
 
-# Features
+## Features
 1.  **User Management:** Automates user creation and deletion with permission handling.
-2.  **System Backups:** Configurable file backup with timestamping and compression.
-3.  **Log Management:** Rotates and archives system logs to save space.
-4.  **System Monitoring:** Checks CPU, Memory, and Disk usage and alerts on high load.
+2.  **Log Management:** Rotates and archives system logs to save space.
+3.  **System Monitoring:** Checks CPU, Memory, and Disk usage and alerts on high load.
+4.  **Network Monitoring:** Scans basic ports and flags the warnings
 
-# Prerequisites
+## Prerequisites
 * **OS:** Linux (Ubuntu/Debian)
 * **Python:** Version 3.7 or higher
 * **Permissions:** Root access (sudo) is required for user management and log access.
 
-# Project Structure
-* `main.py`: The entry point. A Python CLI dashboard that orchestrates the tools (requires SUDO permissions).
+## Project Structure
+* `toolkit.sh`: The entry point. A bash CLI dashboard that orchestrates the tools (requires SUDO permissions).
 * `scripts/`: Contains the individual worker scripts.
 * `config.json`: Stores user preferences (backup paths, log directories).
+
+## Setup & Installation
+1. Retrieve the latest source code from GitHub to your local machine:
+   $ git clone https://github.com/atharva-shigvan/sysadmin-toolkit/tree/master.git
+   $ cd sysadmin-toolkit
+2. Make the necessary files executable
+   $ chmod +x toolkit.sh && chmod +x scripts/*
+3. Run the toolkit (with SUDO permissions)
+   $ sudo ./toolkit.sh
 
